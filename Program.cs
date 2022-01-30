@@ -4,3 +4,12 @@ string[] array ={"Hallow","2","five","second","yes","im"};
 //  2) Вводим переменные нового массива (выводящего результат)
 var result = new string[array.Length];
 var newSize = 0;
+//  3) Вводим условия (критерии отбора) 
+foreach (var value in array)
+{
+  if (value.Length <= 3)
+  {
+  result[newSize] = value;
+  newSize++;
+  }
+}
