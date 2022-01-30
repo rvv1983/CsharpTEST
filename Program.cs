@@ -13,3 +13,5 @@ foreach (var value in array)
   newSize++;
   }
 }
+//  4) Выводим результат построчным методом
+Console.WriteLine(string.Join(Environment.NewLine, result, 0, newSize)); 
